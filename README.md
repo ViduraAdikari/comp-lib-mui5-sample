@@ -21,11 +21,11 @@ output of rollup build located in `/dist` folder.
 ### `package`
 
 package module to install on another React app.\
-output of the package will be located in `root` folder. \
+output of the package (`comp-lib-mui5-sample-x.x.x.tgz`) will be located in `root` folder. \
 you can change the version of the package by changing "version": "x.x.x" in package.json
 
 #### How to install?
-1. Copy Absolute path of comp-lib-mui5-sample-x.x.x \
+1. Copy Absolute path of comp-lib-mui5-sample-x.x.x.tgz
 2. Open terminal for consumer app and run `npm i [copied absolute path]`
 3. For usage [check consumer app here](https://github.com/ViduraAdikari/consumer-comp-lib-mui5-sample.git).
 ---
