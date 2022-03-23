@@ -11,9 +11,9 @@ import {terser} from "rollup-plugin-terser";
 
 import pkg from "./package.json";
 
-// @rollup/plugin-typescript @rollup/plugin-commonjs rollup-plugin-peer-deps-external @rollup/plugin-node-resolve
-// rollup-plugin-dts rollup-plugin-terser
-// rollup-plugin-postcss rollup-plugin-scss @rollup/plugin-image rollup-plugin-svg
+// @rollup/plugin-typescript @rollup/plugin-commonjs rollup-plugin-peer-deps-external @rollup/plugin-node-resolve -D
+// rollup-plugin-dts rollup-plugin-terser -D
+// rollup-plugin-postcss rollup-plugin-scss @rollup/plugin-image rollup-plugin-svg -D
 
 export default [
   {
@@ -31,18 +31,10 @@ export default [
       // },
     ],
     plugins: [
-
-
       peerDepsExternal(),
-
       resolve(),
       commonjs(),
       typescript({tsconfig: "./tsconfig-rollup.json"}),
-
-      // babel({
-      //   exclude: 'node_modules/**',
-      //   babelHelpers: 'bundled'
-      // }),
 
       // scss(),
       // image(),
@@ -50,9 +42,9 @@ export default [
       postcss(),
       terser()
     ],
-    // external: ['react', 'react-dom', 'react-scripts']
   },
   {
+    // input: "dist/esm/types/library.d.ts",
     input: "dist/types/library.d.ts",
     output: [{file: "dist/index.d.ts", format: "esm"}],
     plugins: [dts()],
