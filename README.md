@@ -1,15 +1,36 @@
 # Sample component library build with MUI v5
 This library is to be build using rollup and will be installed as a npm packakge to another Reactjs app.
 
-usage how to use the installed library can be found in this repo:
+## Usage 
+
+how to use the installed library can be found in this repo:
 https://github.com/ViduraAdikari/consumer-comp-lib-mui5-sample.git
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Build Scripts
 
 In the project directory, you can run:
+
+### `buildRoolUp`
+
+Build app using rollup.\
+output of rollup build located in `/dist` folder.
+
+### `package`
+
+package module to install on another React app.\
+output of the package will be located in `root` folder. \
+you can change the version of the package by changing "version": "x.x.x" in package.json
+
+#### How to install?
+1. Copy Absolute path of comp-lib-mui5-sample-x.x.x \
+2. Open terminal for consumer app and run `npm i [copied absolute path]`
+3. For usage [check consumer app here](https://github.com/ViduraAdikari/consumer-comp-lib-mui5-sample.git).
+---
+
+## Other Available Scripts
 
 ### `npm start`
 
