@@ -1,4 +1,4 @@
-#Sample component library build with MUI v5
+# Sample component library build with MUI v5
 This library is to be build using rollup and will be installed as a npm packakge to another Reactjs app.
 
 usage how to use the installed library can be found in this repo:
