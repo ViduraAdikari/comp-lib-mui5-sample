@@ -1,3 +1,8 @@
+// Component to be exported and used by consumer app
+// Project: https://github.com/ViduraAdikari/comp-lib-mui5-sample.git
+// Author: Vidura Adikari
+// Website: https://www.viduraadikari.com/
+
 import React, {PropsWithChildren, useEffect, useState} from 'react';
 import {Theme, ThemeProvider} from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
