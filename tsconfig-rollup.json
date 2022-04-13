@@ -23,6 +23,7 @@
   ],
   "exclude": [
     "node_modules",
+    "build",
     "dist",
     "src/**/*.stories.tsx",
     "src/**/*.test.tsx"
