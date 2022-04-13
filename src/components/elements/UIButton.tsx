@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 
 type UIButtonProps = {
   type: 'primary' | 'secondary'
+  children?: React.ReactNode
 }
 
 const UIButton: React.FC<UIButtonProps> = (props: PropsWithChildren<UIButtonProps>) => {

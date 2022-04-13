@@ -7,7 +7,7 @@ const ElementsContainer: React.FC = () => {
   return (
     <Container maxWidth="xl">
       <Stack direction="row" spacing={3}>
-        <UIButton type="secondary">
+        <UIButton type='secondary'>
           Secondary
         </UIButton>
         <UIButton type="primary">
